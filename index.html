@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/app.css" />
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.4.min.js"
+			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+			crossorigin="anonymous"
+			defer
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+			defer
+		></script>
+		<script src="./js/app.js" defer></script>
+		<title>Patternbank</title>
+	</head>
+
+	<!-- <input
+		class="range-slider"
+		type="range"
+		min="20"
+		max="97"
+		step="1"
+		value="50"
+		orient="vertical"
+	/> -->
+	<body>
+		<section class="patternbank">
+			<div class="patternbank__container">
+				<input
+					class="range-slider"
+					type="range"
+					min="20"
+					max="97"
+					step="1"
+					value="50"
+				/>
+				<div class="swiper preview-area">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="preview-wrapper">
+								<div class="image-control-holder">
+									<img
+										src="./img/image-01.webp"
+										width="850"
+										height="850"
+										alt="Image"
+									/>
+									<div class="pattern-background-image"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="preview-wrapper">
+								<div class="image-control-holder">
+									<img
+										src="./img/image-02.webp"
+										width="846"
+										height="846"
+										alt="Image"
+									/>
+									<div class="pattern-background-image"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="preview-wrapper">
+								<div class="image-control-holder">
+									<img
+										src="./img/image-03.webp"
+										width="846"
+										height="846"
+										alt="Image"
+									/>
+									<div class="pattern-background-image"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="preview-wrapper">
+								<div class="image-control-holder">
+									<img
+										src="./img/image-04.webp"
+										width="846"
+										height="846"
+										alt="Image"
+									/>
+									<div class="pattern-background-image"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<div class="swiper preview-masks">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="mask-thumb">
+								<img
+									src="./img/image-01.webp"
+									width="100"
+									height="100"
+									alt="Image"
+								/>
+								<div class="mask-thumb-height"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mask-thumb">
+								<img
+									src="./img/image-02.webp"
+									width="100"
+									height="100"
+									alt="Image"
+								/>
+								<div class="mask-thumb-height"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mask-thumb">
+								<img
+									src="./img/image-03.webp"
+									width="100"
+									height="100"
+									alt="Image"
+								/>
+								<div class="mask-thumb-height"></div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="mask-thumb">
+								<img
+									src="./img/image-04.webp"
+									width="100"
+									height="100"
+									alt="Image"
+								/>
+								<div class="mask-thumb-height"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

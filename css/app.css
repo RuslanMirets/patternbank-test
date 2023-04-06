@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* input[type="range"][orient="vertical"] {
+	-webkit-appearance: none;
+	height: auto;
+	border-radius: 5px;
+	background: #ccc;
+	outline: none;
+	writing-mode: bt-lr;
+	-webkit-appearance: slider-vertical; 
+} */
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 16px;
+	margin: 0 auto;
+}
+
+.patternbank__container {
+	width: 100%;
+	max-width: 550px;
+	margin: 100px auto 0;
+}
+.range-slider {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.image-control-holder {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	cursor: move;
+	border: 1px solid #000;
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+}
+.image-control-holder img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.pattern-background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 63%;
+	background-repeat: repeat;
+	background-position: 0% 0%;
+	background-image: url("../img/pattern-01.webp");
+}
+
+.preview-masks .swiper-slide .mask-thumb {
+	border: 1px solid transparent;
+}
+.preview-masks .swiper-slide-thumb-active .mask-thumb {
+	border: 1px solid crimson;
+}
+.mask-thumb {
+	width: 122px;
+	height: 122px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.mask-thumb img {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.mask-thumb-height {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: 0% 0%;
+	background-image: url("../img/pattern-01.webp");
+}
